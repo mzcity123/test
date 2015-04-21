@@ -21,6 +21,7 @@ class WebTestCase(unittest.TestCase):
     wait_seconds = 0
 
     def setUp(self):
+        self.result = ""
 
     def tearDown(self):
         self.driver.save_screenshot('screenshot.png')
